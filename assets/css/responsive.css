@@ -26,4 +26,8 @@
   .hero h1{ font-size:2.1rem; }
   .mini-card-head{ flex-direction:column; gap:4px; }
 }
-@media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; }
+  .terminal-body .line{ opacity:1; }
+  .reveal{ opacity:1; transform:none; }
+}
