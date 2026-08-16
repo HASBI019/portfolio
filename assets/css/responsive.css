@@ -30,4 +30,5 @@
   *{ animation:none !important; transition:none !important; }
   .terminal-body .line{ opacity:1; }
   .reveal{ opacity:1; transform:none; }
+  .terminal-body .cursor{ animation:blink 1s step-end infinite !important; }
 }
