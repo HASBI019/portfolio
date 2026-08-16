@@ -1,0 +1,47 @@
+/* Hero */
+.hero{ padding:88px 0 60px; position:relative; }
+.hero .wrap{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center; }
+.hero h1{ font-size:clamp(2.4rem, 5vw, 3.6rem); font-weight:700; line-height:1.05; margin-bottom:18px; }
+.hero h1 .accent{ color:var(--coral); }
+.hero h1 .accent2{ color:var(--purple); }
+.hero p.lede{ font-size:1.1rem; color:var(--ink-soft); max-width:480px; margin-bottom:28px; }
+.cta-row{ display:flex; gap:14px; flex-wrap:wrap; }
+.s1{ top:-58px; left:10px; background:var(--bg-soft); color:var(--mint); transform:rotate(-6deg); }
+.s2{ top:-30px; right:20px; background:var(--bg-soft); color:var(--yellow); transform:rotate(8deg); }
+
+/* About */
+.about{ background:var(--bg-soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.about-grid{ display:grid; grid-template-columns:0.75fr 1.25fr; gap:48px; align-items:start; }
+.photo-wrap{ width:100%; aspect-ratio:3/4; border-radius:var(--radius); overflow:hidden; background:linear-gradient(135deg, var(--bg-soft2), var(--bg)); display:flex; align-items:center; justify-content:center; }
+.photo-wrap img{ width:100%; height:100%; object-fit:cover; object-position:50% 30%; display:block; transform:scale(1.65); transform-origin:50% 30%; }
+.photo-wrap .placeholder-txt{ font-family:'JetBrains Mono', monospace; font-size:0.8rem; color:var(--ink-soft); text-align:center; padding:20px; }
+.role-tag{ font-size:0.9rem; color:var(--ink-soft); margin-top:14px; font-family:'JetBrains Mono', monospace; }
+.trait-badges{ display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.trait-badges .skill-badge{ font-size:0.78rem; padding:5px 11px; }
+.about-text p{ margin-bottom:16px; color:var(--ink-soft); font-size:1.02rem; }
+.about-text strong{ color:var(--ink); }
+
+.ai-note{ margin-top:20px; background:var(--bg-soft2); border:1px solid var(--line); border-left:3px solid var(--purple); border-radius:12px; padding:18px 20px; }
+.ai-note .tag{ font-family:'JetBrains Mono', monospace; font-size:0.75rem; color:var(--mint); margin-bottom:8px; display:block; }
+.ai-note p{ margin-bottom:0; color:var(--ink-soft); font-size:0.95rem; }
+
+/* Projects */
+.projects-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.mini-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+.more-note{ margin-top:20px; font-family:'JetBrains Mono', monospace; font-size:0.85rem; color:var(--ink-soft); }
+.github-more{ margin-top:26px; display:inline-flex; align-items:center; gap:6px; font-weight:600; font-size:0.92rem; color:var(--purple); border-bottom:1px solid var(--purple); }
+
+/* Hobby */
+.hobby-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+
+/* Skills */
+.skills{ background:var(--bg-soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.skills-groups{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.skill-group h4{ font-family:'JetBrains Mono', monospace; font-size:0.85rem; color:var(--purple); margin-bottom:14px; }
+.skill-badges{ display:flex; flex-wrap:wrap; gap:8px; }
+
+/* Contact */
+.contact .wrap{ text-align:center; }
+.contact h2{ font-size:clamp(2rem,4vw,2.8rem); margin-bottom:14px; }
+.contact p{ color:var(--ink-soft); max-width:480px; margin:0 auto 32px; }
+.contact-links{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
