@@ -39,16 +39,6 @@ export function EducationSection() {
           <EditorialDivider />
         </div>
 
-        <a
-          href={CERTIFICATES_DRIVE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold rounded-xl bg-[#111318] text-white hover:bg-[#1d4ed8] transition-colors self-start md:self-auto whitespace-nowrap shrink-0"
-        >
-          <Award className="w-4 h-4" />
-          Lihat Semua Sertifikat (Google Drive)
-          <ExternalLink className="w-3.5 h-3.5" />
-        </a>
       </div>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -117,6 +107,17 @@ export function EducationSection() {
             </motion.a>
           ))}
         </div>
+
+        <a
+          href={CERTIFICATES_DRIVE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold rounded-xl bg-[#111318] text-white hover:bg-[#1d4ed8] transition-colors self-start md:self-auto whitespace-nowrap shrink-0"
+        >
+          <Award className="w-4 h-4" />
+          Lihat Semua Sertifikat (Google Drive)
+          <ExternalLink className="w-3.5 h-3.5" />
+        </a>
       </div>
     </section>
   );
