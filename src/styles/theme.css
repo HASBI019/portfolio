@@ -1,0 +1,124 @@
+/* Tema Visual & Tipografi Portofolio
+ * Warna menggunakan pendekatan 60-30-10 Editorial Cool-Stone + Deep Ink + Electric Cobalt
+ */
+
+:root {
+  --bg-canvas: #f5f5f4;
+  --bg-surface: #ffffff;
+  --bg-surface-muted: #eaeae7;
+  --ink-primary: #111318;
+  --ink-secondary: #4a505c;
+  --ink-muted: #717784;
+  --accent-primary: #1d4ed8;
+  --accent-hover: #1e40af;
+  --hairline: rgba(17, 19, 24, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono-tabular {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Latar grid arsitektural halus untuk kedalaman tanpa noise visual */
+.editorial-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(17, 19, 24, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 19, 24, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Marquee animasi lembut untuk pemisah seksi */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 34s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Scrollbar minimalis */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(17, 19, 24, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(17, 19, 24, 0.4);
+}
+
+/* Dukungan prefers-reduced-motion untuk aksesibilitas */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* Mode cetak untuk CV */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-cv,
+  #printable-cv * {
+    visibility: visible;
+  }
+  #printable-cv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    color: #111318;
+    padding: 24px;
+  }
+}

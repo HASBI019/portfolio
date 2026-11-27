@@ -1,0 +1,6 @@
+{
+  "name": "Portofolio Hasbi",
+  "description": "Template portofolio personal interaktif berbahasa Indonesia yang siap di-hosting gratis di Vercel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
