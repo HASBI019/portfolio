@@ -11,7 +11,7 @@ export const profileData: ProfileData = {
   location: 'Tasikmalaya, Jawa Barat',
   availabilityText: 'Terbuka untuk Peluang Kerja & Kolaborasi',
   heroIntro:
-    'Lulusan S1 Teknik Informatika Sekolah Tinggi Teknologi Cipasung yang berfokus pada pengembangan web, sistem informasi, dan pengelolaan data terstruktur. Terbiasa membangun aplikasi nyata dari tugas akhir hingga kerja praktik instansi.',
+    'Lulusan S1 Informatika Sekolah Tinggi Teknologi Cipasung yang berfokus pada pengembangan web, sistem informasi, dan pengelolaan data terstruktur. Terbiasa membangun aplikasi nyata dari tugas akhir hingga kerja praktik instansi.',
   aboutSummary:
     'Perjalanan akademik, pengalaman organisasi sebagai Ketua HMIF, serta rekam jejak kerja praktik dan kerja lapangan yang membentuk kedisiplinan serta ketelitian saya.',
   projectsSummary:

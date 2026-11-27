@@ -7,7 +7,7 @@ import { AboutData } from '../types/portfolio';
 export const aboutData: AboutData = {
   headline: 'Merapikan alur sistem informasi dan membangun web yang benar-benar membantu pengguna.',
   paragraphs: [
-    'Saya Muhammad Hasbi As’ari, lulusan S1 Teknik Informatika Sekolah Tinggi Teknologi Cipasung (2022–2026). Saya memiliki ketertarikan kuat pada pengembangan sistem informasi, aplikasi web, pengelolaan data, serta pekerjaan administrasi teknis yang membutuhkan ketelitian dan keteraturan.',
+    'Saya Muhammad Hasbi As’ari, lulusan S1 Informatika Sekolah Tinggi Teknologi Cipasung (2022–2026). Saya memiliki ketertarikan kuat pada pengembangan sistem informasi, aplikasi web, pengelolaan data, serta pekerjaan administrasi teknis yang membutuhkan ketelitian dan keteraturan.',
     'Sebelum kuliah, saya menjalani masa jeda dua tahun dengan mondok sambil bekerja di Pawon Mbok Debi mulai dari cleaning service hingga dipercaya menjadi juru masak serta bekerja paruh waktu di Sari Roti saat libur semester. Pengalaman lapangan tersebut membentuk kedisiplinan waktu, etos kerja, dan ketahanan saya saat bekerja di bawah tekanan.',
     'Selama kuliah, saya aktif di organisasi mahasiswa dan kepanitiaan kampus dari Kepala Divisi Minfo BEM hingga menjadi Ketua Himpunan Mahasiswa Informatika (HMIF) periode 2025/2026. Di sisi teknis, saya menyelesaikan kerja praktik di BPS Kabupaten Tasikmalaya dengan membangun website Indeks Perkembangan Harga, serta merancang sistem informasi manajemen inventaris dengan fitur predictive maintenance untuk Tugas Akhir.',
   ],
@@ -137,7 +137,7 @@ education: [
     {
       id: 'edu-1',
       period: '2022 - 2026',
-      degree: 'S1 Teknik Informatika (Sarjana Komputer)',
+      degree: 'S1 Informatika (Sarjana Komputer)',
       institution: 'Sekolah Tinggi Teknologi Cipasung',
       location: 'Tasikmalaya, Jawa Barat',
       gpaOrNote: 'IPK 3,64 / 4.00 · Cum Laude',
