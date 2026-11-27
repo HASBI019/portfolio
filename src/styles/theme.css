@@ -57,21 +57,24 @@ body {
 /* Marquee animasi lembut untuk pemisah seksi */
 @keyframes marquee-scroll {
   0% {
-    transform: translateX(0%);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee-scroll 34s linear infinite;
+  will-change: transform;
+  animation: marquee-scroll 28s linear infinite;
 }
 
-.animate-marquee:hover {
-  animation-play-state: paused;
+@media (hover: hover) {
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
 }
 
 /* Scrollbar minimalis */
@@ -97,9 +100,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-  .animate-marquee {
-    animation: none;
   }
 }
 

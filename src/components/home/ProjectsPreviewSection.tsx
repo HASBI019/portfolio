@@ -22,7 +22,7 @@ const marqueeWords = [
   'Sistem Desain',
   'Performa Tinggi',
 ];
-
+const marqueeTrack = [...marqueeWords, ...marqueeWords];
 export function ProjectsPreviewSection({
   onOpenProjectsPage,
   onSelectProject,
@@ -37,14 +37,21 @@ export function ProjectsPreviewSection({
     >
       {/* Pita Marquee Pemisah Seksi */}
       <div className="w-full overflow-hidden border-b border-black/10 bg-white py-3.5">
-        <div className="animate-marquee items-center gap-6 text-xs font-medium text-[#4a505c]">
-          {marqueeWords.map((word, idx) => (
-            <span key={`${word}-${idx}`} className="inline-flex items-center gap-6 whitespace-nowrap">
-              <span>{word}</span>
-              <span aria-hidden="true" className="text-[#1d4ed8]">
-                ·
-              </span>
-            </span>
+        <div className="animate-marquee items-center text-xs font-medium text-[#4a505c]">
+          {[0, 1].map((group) => (
+            <div key={group} aria-hidden={group === 1} className="flex shrink-0 items-center">
+              {marqueeTrack.map((word, idx) => (
+                <span
+                  key={`${group}-${word}-${idx}`}
+                  className="inline-flex items-center gap-6 pr-6 whitespace-nowrap"
+                >
+                  <span>{word}</span>
+                  <span aria-hidden="true" className="text-[#1d4ed8]">
+                    ·
+                  </span>
+                </span>
+              ))}
+            </div>
           ))}
         </div>
       </div>
