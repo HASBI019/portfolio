@@ -9,7 +9,7 @@ export const profileData: ProfileData = {
   fullName: "Muhammad Hasbi As'ari",
   roleTitle: 'Fresh Graduate Informatika',
   location: 'Tasikmalaya, Jawa Barat',
-  availabilityText: 'Terbuka untuk MagangHub & Posisi Entry-Level',
+  availabilityText: 'Terbuka untuk Peluang Kerja & Kolaborasi',
   heroIntro:
     'Lulusan S1 Teknik Informatika Sekolah Tinggi Teknologi Cipasung yang berfokus pada pengembangan web, sistem informasi, dan pengelolaan data terstruktur. Terbiasa membangun aplikasi nyata dari tugas akhir hingga kerja praktik instansi.',
   aboutSummary:
@@ -18,7 +18,7 @@ export const profileData: ProfileData = {
     'Kumpulan karya yang pernah saya bangun selama kuliah, kerja praktik di BPS Kabupaten Tasikmalaya, hingga aplikasi untuk kebutuhan UMKM.',
   contactHeading: 'Mari Berkolaborasi',
   contactDescription:
-    'Sedang mencari kandidat untuk program MagangHub, posisi Junior Web Developer, Staf Sistem Informasi, atau kolaborasi proyek? Silakan kirim pesan atau hubungi saya lewat tautan berikut.',
+    'Sedang mencari kandidat untuk posisi Web Developer, Staf IT & Sistem Informasi, magang, atau kolaborasi proyek? Silakan kirim pesan atau hubungi saya lewat tautan berikut.',
   email: 'jinfeihasbi17@gmail.com',
   // Nomor WhatsApp/HP dari CV
   phone: '+62 859-6018-5951',
